@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/juego.css"/>
+    <title>Juego I</title>
+  </head>
+  <body>
+  
+  <!-- En estos divs es donde se muestran las lecturas en x, y, z del acelerómetro. Algo a tener
+	en cuenta es que los divs se han dividido en dos con un span para no tener que repintarlo todo 
+	cada vez que cambia un valor. 
+    <div class='lectura'>x&nbsp;<span id='valorx'>?</span></div>
+    <div class='lectura'>y&nbsp;<span id='valory'>?</span></div>
+    <div class='lectura'>z&nbsp;<span id='valorz'>?</span></div>
+	
+	//Quitamos estos divs donde imprimíamos los valores del acelerómetro y los sustituímos por uno
+	de id phaser que es donde ahora incrustaremos el juego.
+	-->
+	
+	<div id="phaser"></div>
+	
+    <script type="text/javascript" src="cordova.js"></script>
+	<!-- Esta es la librería Phaser.js que usamos para los juegos. La agregamos en la segunda clase.-->
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<!-- Incluimos nuestra librería js para manejar los datos del acelerómetro. -->
+    <script type="text/javascript" src="js/juego3.js"></script>
+  </body>
+</html>
